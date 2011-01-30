@@ -8,15 +8,15 @@ Gem::Specification.new do |s|
   s.authors = ["Micah Winkelspecht"]
   s.date = %q{2011-01-30}
   s.description = %q{Adapter to allow Mongoid to persist and restore state of objects using the AlterEgo state machine, ported from the alter-ego-activerecord gem by Paul Hieromnimon}
-  s.email = %q{paul.hieromnimon@gmail.com}
+  s.email = %q{winkelspecht@gmail.com}
   s.extra_rdoc_files = ["README.rdoc", "lib/alter_ego/mongoid_adapter.rb"]
-  s.files = ["Manifest", "README.rdoc", "Rakefile", "alter-ego-mongoid.gemspec", "init.rb", "lib/alter_ego/active_record_adapter.rb", "pkg/alter-ego-mongoid-0.1.2.gem", "pkg/alter-ego-mongoid-0.1.2.tar.gz", "pkg/alter-ego-mongoid-0.1.2/Manifest", "pkg/alter-ego-mongoid-0.1.2/README.rdoc", "pkg/alter-ego-mongoid-0.1.2/Rakefile", "pkg/alter-ego-mongoid-0.1.2/alter-ego-mongoid.gemspec", "pkg/alter-ego-mongoid-0.1.2/init.rb", "pkg/alter-ego-mongoid-0.1.2/lib/alter_ego/active_record_adapter.rb", "pkg/alter-ego-mongoid-0.1.2/test/adapter_test.rb", "pkg/alter-ego-mongoid-0.1.2/test/create_traffic_signals.rb", "pkg/alter-ego-mongoid-0.1.2/test/helper.rb", "pkg/alter-ego-mongoid-0.1.2/test/traffic_signal.rb", "test/adapter_test.rb", "test/create_traffic_signals.rb", "test/helper.rb", "test/testdb.sqlite", "test/traffic_signal.rb"]
+  s.files = ["Manifest", "README.rdoc", "Rakefile", "alter-ego-mongoid.gemspec", "init.rb", "lib/alter_ego/mongoid_adapter.rb", "test/adapter_test.rb", "test/helper.rb", "test/traffic_signal.rb"]
   s.homepage = %q{http://github.com/wink/alter-ego-mongoid}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Alter-ego-mongoid", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{alter-ego-mongoid}
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Adapter to allow Mongoid to persist and restore state of objects using the AlterEgo state machine}
+  s.summary = %q{Adapter to allow Mongoid to persist and restore state of objects using the AlterEgo state machine, ported from the alter-ego-activerecord gem by Paul Hieromnimon}
   s.test_files = ["test/adapter_test.rb"]
 
   if s.respond_to? :specification_version then
