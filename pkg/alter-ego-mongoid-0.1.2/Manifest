@@ -1,9 +1,0 @@
-Manifest
-README.rdoc
-Rakefile
-alter-ego-mongoid.gemspec
-init.rb
-lib/alter_ego/mongoid_adapter.rb
-test/adapter_test.rb
-test/helper.rb
-test/traffic_signal.rb

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{alter-ego-mongoid}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Micah Winkelspecht"]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Adapter to allow Mongoid to persist and restore state of objects using the AlterEgo state machine, ported from the alter-ego-activerecord gem by Paul Hieromnimon}
   s.email = %q{winkelspecht@gmail.com}
   s.extra_rdoc_files = ["README.rdoc", "lib/alter_ego/mongoid_adapter.rb"]
-  s.files = ["Manifest", "README.rdoc", "Rakefile", "alter-ego-mongoid.gemspec", "init.rb", "lib/alter_ego/mongoid_adapter.rb", "test/adapter_test.rb", "test/helper.rb", "test/traffic_signal.rb"]
+  s.files = ["Manifest", "README.rdoc", "Rakefile", "init.rb", "lib/alter_ego/mongoid_adapter.rb", "test/adapter_test.rb", "test/helper.rb", "test/traffic_signal.rb", "alter-ego-mongoid.gemspec"]
   s.homepage = %q{http://github.com/wink/alter-ego-mongoid}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Alter-ego-mongoid", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
