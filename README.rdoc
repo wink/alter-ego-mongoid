@@ -1,0 +1,37 @@
+= AlterEgo-Mongoid
+
+== Motivation
+AlterEgo is my favorite Ruby state machine for the following reasons:
+  1. It's not dependent on Mongoid - it can be used on plain Ruby objects.
+  2. It most closely follows the GOF State Pattern because it allows for 
+     polymorphic behavior based on state.
+
+Out of the box, AlterEgo doesn't play nicely with Mongoid because it 
+stores state in <tt>@state</tt>, whereas subclasses of Mongoid::Base
+persist their <tt>attributes</tt> hash.
+
+This mixin overrides the AlterEgo's accessor methods for state to allow it 
+to be properly persisted to a database, as well as serialized/unserialized as
+json, yml, and xml.
+
+== Installation
+=== As a Ruby Gem 
+  gem install alter-ego-mongoid
+=== OR as a Rails plugin
+  script/plugin install git://github.com/wink/alter-ego-mongoid.git
+
+== Usage
+Make sure the table your class maps to has a <tt>state</tt> column of type
+varchar, string, etc.
+
+  # you'll only need the following two lines if you're NOT using
+  # alter-ego-mongoid as a plugin
+  gem 'alter-ego-mongoid'
+  require 'alter_ego/active_record_adapter'
+
+  class Example < Mongoid::Base
+    include AlterEgo # include this first
+    include AlterEgo::MongoidAdapter
+
+    # Your code here
+  end
